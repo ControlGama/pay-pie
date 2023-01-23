@@ -1,0 +1,19 @@
+.cardextrasmall{
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.cardsmall{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.cardmedium{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.cardlarge{
+    font-size: 27px;
+    font-weight: 500;
+}

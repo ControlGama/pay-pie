@@ -1,7 +1,7 @@
-import styles from '../../styles/components/editButton.module.css'
+import ButtonsStyles from '../../styles/buttons.module.css'
 
 export function EditButton() {
     return(
-        <button className={styles.editbutton}>Editar</button>
+        <button className={ButtonsStyles.editbutton}>Editar</button>
     );
 }

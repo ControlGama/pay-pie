@@ -1,0 +1,41 @@
+
+.dashboardcard{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    width: 310px;
+    height: 396px;
+    border-radius: 20px;
+}
+
+.dashboardcard > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.dashboardcard > div:nth-child(2){
+    margin-top: 50px;
+    align-self: center;
+    text-align: center;
+}
+
+.dashboardcard > div:nth-child(3){
+    margin-top: 40px;
+    align-self: center;
+    text-align: center;
+}
+
+.dashboardcard > div:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 70px 20px 0 20px;
+}
+
+.dashboardcard > div:nth-child(5){
+    margin-top: auto;
+}
+
+
