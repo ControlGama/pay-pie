@@ -1,15 +1,15 @@
-import styles from "../../styles/login.module.css";
+import containerStyles from "../../styles/containers.module.css";
 
 export function CardLogin({ children }) {
   return (
     <>
-      <div className={styles.top__bar}></div>
-      <div className={styles.card__container}>
-        <div className={styles.ellipse}>
-          <div className={styles.card}>{children}</div>
+      <div className={containerStyles.top__bar}></div>
+      <div className={containerStyles.card__container}>
+        <div className={containerStyles.ellipse}>
+          <div className={containerStyles.card}>{children}</div>
         </div>
       </div>
-      <div className={styles.bottom__bar}></div>
+      <div className={containerStyles.bottom__bar}></div>
     </>
   );
 }

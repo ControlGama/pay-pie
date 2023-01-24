@@ -1,16 +1,18 @@
-import styles from "../../styles/login.module.css";
 import { CardLogin } from "../containers/CardLogin";
-import Button from "../components/Button";
-import Input from "../components/Input";
+import LoginButton from "../components/LoginButton";
+import LoginInput from "../components/LoginInput";
+
+import pageStyles from "../../styles/pages.module.css";
 
 export default function Login(params) {
   return (
     <>
         <CardLogin>
-          <h1>¡Bienvenidos!</h1>
-          <form className={styles.form}>
-            <Input
+          <h2>¡Bienvenidos!</h2>
+          <form className={pageStyles.loginform}>
+            <LoginInput
               name={"Correo: "}
+              type={"text"}
               icon={
                 <svg
                   fill="#2A2A72"
@@ -29,8 +31,9 @@ export default function Login(params) {
                 </svg>
               }
             />
-            <Input
+            <LoginInput
               name={"Contraseña: "}
+              type={"password"}
               icon={
                 <svg
                   viewBox="0 0 24 24"
@@ -64,17 +67,17 @@ export default function Login(params) {
               }
             />
           </form>
-          <a href="/login" className={styles.recover__password}>
+          <a href="/login" className={pageStyles.loginrecover__password}>
             ¿Olvidaste tu contraseña?
           </a>
-          <form action="" className={styles.checkbox__container}>
+          <form action="" className={pageStyles.logincheckbox__container}>
             <input type="checkbox" />
             <label htmlFor="">Recordar dispositivo</label>
           </form>
-          <div className={styles.bottom__elements}>
-            <Button text={"Iniciar sesión"} />
-            <p id={styles.register__text}>
-              ¿Aun no tienes cuenta? <a href="/login">Regístrate aquí</a>
+          <div className={pageStyles.loginbottom__elements}>
+            <LoginButton text={"Iniciar sesión"} />
+            <p className={pageStyles.loginregister__text}>
+              ¿Aun no tienes cuenta? <a href="/signup">Regístrate aquí</a>
             </p>
           </div>
         </CardLogin>
