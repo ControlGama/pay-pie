@@ -1,0 +1,39 @@
+
+.input__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 6px 0 18px 0;
+    border: 1px solid black;
+}
+.input__container div{
+    width: 30px;
+    height: 30px;
+}
+.input__container input{
+    height: 100%;
+    width: 90%;
+    padding: 4px;
+    border: none;
+}
+.input__container input:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 480px){
+    .input__container {
+        height: 30px;
+    }
+    .input__container div{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px){ 
+    .input__container input{
+        font-size: 16px;
+    }
+}
