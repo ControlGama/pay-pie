@@ -50,7 +50,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 30px 50px;
+    margin: 30px var(--side-margin);
     row-gap: 20px;
 }
 
